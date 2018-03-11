@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>
+    <a href="">新文章</a>
+</h2>
+{% for article in articles %}
+    <a href="{% url 'test1:article_page' article.id %}">{{ article.title }}</a>
+    <br>
+{% endfor %}
+</body>
+</html>
